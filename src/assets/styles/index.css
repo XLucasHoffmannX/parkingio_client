@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --white: #ffff;
+    --white-second: #F2F2F2;
+    --black-principal: #414143;
+    --black-second: #626264;
+    --blue: #0085FF;
+    --purple: #4D77FF;
+    --red: #FF4757
+}
+
+@keyframes animate-div {
+    from {
+        opacity: 0;
+        margin-top: -150px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--blue-standart);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input, button, textarea {
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    background: var(--white-second);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    overflow: auto;
+}
+
+@media (min-width:700px) {
+    *::-webkit-scrollbar-track {
+        background-color: transparent;
+        margin: 30px 0;
+    }
+    *::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background: transparent;
+    }
+    *::-webkit-scrollbar-thumb {
+        background: #dad7d7;
+    }
+    *::-webkit-scrollbar-thumb:vertical {
+        height: 2px;
+        border-radius: 6px;
+    }
+    *::-webkit-scrollbar {
+        height: -10rem;
+        border-radius: 50%;
+    }
+}

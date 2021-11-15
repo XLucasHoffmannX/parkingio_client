@@ -1,0 +1,46 @@
+/* component_select */
+
+.component_select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100%, 850px);
+    margin: 1rem 0;
+    animation: left .5s;
+}
+
+.component_select ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: var(--white);
+    border-radius: 12px;
+}
+
+.component_select ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.actv {
+    background: var(--purple);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .component_select {
+        flex-direction: column;
+    }
+    .component_select h2 {
+        margin-bottom: 1rem;
+    }
+    .component_select ul {
+        height: auto;
+    }
+}
